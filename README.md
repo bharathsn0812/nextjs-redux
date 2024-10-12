@@ -20,7 +20,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/nextjs-redux-todo.git
+   git clone https://github.com/bharathsn0812/nextjs-redux.git
    cd nextjs-redux-todo
    ```
 
