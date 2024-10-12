@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 14 + Redux Toolkit Todo List
 
-## Getting Started
+This project is a simple Todo List application built with Next.js 14, Redux Toolkit, and TypeScript. It demonstrates how to set up and use Redux Toolkit for state management in a Next.js environment with TypeScript support.
 
-First, run the development server:
+## Features
 
-```bash
+- Add new todos
+- Toggle todo completion status
+- Remove todos
+- Fully typed with TypeScript
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v14.x or later)
+- npm (v6.x or later)
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/nextjs-redux-todo.git
+   cd nextjs-redux-todo
+   ```
+
+2. Install the dependencies:
+   ```
+   npm install
+   ```
+
+## Usage
+
+To run the development server:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/store.ts`: Configures the Redux store using Redux Toolkit.
+- `app/features/todos/todosSlice.ts`: Defines the todo list slice with actions for adding, toggling, and removing todos.
+- `app/components/TodoList.tsx`: React component that displays the todo list and handles user interactions.
+- `app/layout.tsx`: Root layout component that wraps the application with the Redux Provider.
+- `app/page.tsx`: Main page component that renders the TodoList.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js 14](https://nextjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React Redux](https://react-redux.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
